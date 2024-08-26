@@ -1,4 +1,4 @@
-# Portfolio de [Votre Nom]
+# Portfolio de Libasse Dia - L-Devpro
 
 Bienvenue sur mon portfolio ! Je suis un développeur web full-stack passionné, spécialisé dans la création d'applications web dynamiques et réactives. Ce site présente mes projets, compétences et expériences professionnelles.
 
