@@ -63,4 +63,4 @@ Pour cloner et exécuter ce projet sur votre machine locale, suivez ces étapes 
 
 1. Clonez le dépôt :
    ```bash
-   git clone (https://github.com/philodia/ldevpro_portfolio)
+   git clone https://github.com/philodia/ldevpro_portfolio
