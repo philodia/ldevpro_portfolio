@@ -43,11 +43,11 @@ Je maîtrise plusieurs compétences et langages de programmation, notamment :
 
 Voici quelques-uns de mes projets récents :
 
-1. **[Nom du Projet 1](lien_vers_le_projet_1)**
+1. **Easy-gescOOM (lien_vers_le_projet_1)**
    - Description : Une brève description du projet.
    - Technologies utilisées : [Liste des technologies].
 
-2. **[Nom du Projet 2](lien_vers_le_projet_2)**
+2. **Site web Farlu Ci Diine Ji (lien_vers_le_projet_2)**
    - Description : Une brève description du projet.
    - Technologies utilisées : [Liste des technologies].
 
@@ -63,4 +63,4 @@ Pour cloner et exécuter ce projet sur votre machine locale, suivez ces étapes 
 
 1. Clonez le dépôt :
    ```bash
-   git clone [https://github.com/votre-utilisateur/portfolio.git](https://github.com/philodia/ldevpro_portfolio)
+   git clone (https://github.com/philodia/ldevpro_portfolio)
