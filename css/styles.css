@@ -192,8 +192,7 @@ body {
 
 /* Styles pour la section d'accueil */
 #accueil {
-  background-image: url(/img/accueil/bg.png);
-  background-color: #1261b1;
+  background-image: url(../img/accueil/bg.png);
   padding: 80px 0;
 }
 
