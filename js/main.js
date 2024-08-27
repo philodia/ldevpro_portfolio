@@ -1,11 +1,11 @@
 // script.js
 
 // Afficher le nombre d'annee de developpement website
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const startYear = 2023; // Remplacez par l'année où vous avez commencé à travailler comme développeur
     const currentYear = new Date().getFullYear();
     const yearsOfExperience = currentYear - startYear;
-    
+
     const experienceElement = document.getElementById('experience-years');
     if (experienceElement) {
         experienceElement.textContent = yearsOfExperience;
@@ -74,6 +74,11 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelector('.progress-bar.mongodb').style.width = (competenceMONGODB * 100).toFixed(2) + '%';
     document.querySelector('.progress-bar.mongodb').textContent = (competenceMONGODB * 100).toFixed(2) + '%';
 
+    // Exemple d'utilisation pour une compétence VUE)
+    let competenceVUE = calculerCompetence(0.20, 5, 0.10);
+    document.querySelector('.progress-bar.vue').style.width = (competenceVUE * 100).toFixed(2) + '%';
+    document.querySelector('.progress-bar.vue').textContent = (competenceVUE * 100).toFixed(2) + '%';
+
     // Exemple d'utilisation pour une compétence (GIT)
     let competenceGIT = calculerCompetence(0.30, 5, 0.10);
     document.querySelector('.progress-bar.git').style.width = (competenceGIT * 100).toFixed(2) + '%';
@@ -88,11 +93,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 // Bouton a remonter
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const backToTopButton = document.getElementById('backToTop');
 
     // Afficher ou cacher le bouton en fonction du défilement
-    window.addEventListener('scroll', function() {
+    window.addEventListener('scroll', function () {
         if (window.scrollY > 300) {
             backToTopButton.classList.add('show');
         } else {
@@ -101,7 +106,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Retourner en haut de la page lors du clic
-    backToTopButton.addEventListener('click', function() {
+    backToTopButton.addEventListener('click', function () {
         window.scrollTo({
             top: 0,
             behavior: 'smooth'
