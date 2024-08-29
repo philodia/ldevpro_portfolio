@@ -1,226 +1,121 @@
 /* styles.css */
-
-/* Styles généraux */
+/* Styles généraux pour le corps de la page */
 body {
   font-family: 'Arial', sans-serif;
-  color: #333;
-  background-image: url(../img/accueil/bg.png);
-}
-
-/* Style pour la barre supérieure */
-.topbar {
+  margin: 0;
+  padding: 0;
   background-color: #f8f9fa; /* Couleur de fond claire */
-  padding: 20px 0; /* Espacement vertical */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre légère */
 }
 
-/* Style pour le conteneur à l'intérieur de la barre supérieure */
-.topbar .container {
-  max-width: 800px; /* Largeur maximale */
-  margin: 0 auto; /* Centrer le conteneur */
-  display: flex; /* Disposition flex pour aligner les éléments horizontalement */
-  justify-content: space-between; /* Espacement entre les éléments */
-  align-items: center; /* Alignement vertical centré */
+/* Style pour la top bar */
+/* Style pour le top bar */
+.topbar {
+  background-color: #f8f9fa; /* Couleur de fond de la top bar */
+  padding: 10px 0; /* Espacement vertical */
+  border-bottom: 1px solid #dee2e6; /* Bordure en bas de la top bar */
 }
 
-/* Style pour le titre dans la barre supérieure */
 .topbar h3 {
-  font-size: 24px; /* Taille de la police */
-  margin: 0; /* Supprimer l'espacement sous le titre */
-  color: #333; /* Couleur du texte */
+  margin: 0; /* Supprime la marge par défaut du h3 */
+  font-size: 1.2rem; /* Taille de la police du texte */
+  font-weight: bold; /* Gras pour le texte */
 }
 
-/* Style pour les liens de contact dans la barre supérieure */
-.topbar .contact-links {
-  display: flex; /* Disposition flex pour les liens */
-  flex-direction: row; /* Orientation horizontale */
-  align-items: center; /* Centrer les éléments verticalement */
+.contact-links {
+  display: flex; /* Affiche les liens en ligne */
+  justify-content: center; /* Centre les liens horizontalement */
+  gap: 10px; /* Espacement entre les liens */
 }
 
-/* Style pour chaque lien dans la barre supérieure */
-.topbar .contact-links a {
-  text-decoration: none; /* Supprimer le soulignement */
-  color: #007bff; /* Couleur du texte */
-  font-size: 18px; /* Taille de la police */
-  margin: 0 10px; /* Espacement horizontal entre les liens */
-  transition: color 0.3s, transform 0.3s; /* Transition pour les effets */
+.contact-links a {
+  color: #333; /* Couleur des liens */
+  text-decoration: none; /* Supprime la décoration des liens */
+  display: flex; /* Affichage en ligne flexible pour les icônes et texte */
+  align-items: center; /* Aligne les icônes et texte au centre */
+  padding: 5px 10px; /* Espacement intérieur */
+  border-radius: 5px; /* Bordures arrondies */
+  transition: all 0.3s ease; /* Transition fluide pour les effets */
 }
 
-/* Effet au survol des liens de contact */
-.topbar .contact-links a:hover {
-  color: #0056b3; /* Couleur au survol */
-  transform: scale(1.05); /* Légère augmentation de la taille */
+.contact-links a:hover {
+  color: #007bff; /* Couleur des liens au survol */
+  background-color: #e9ecef; /* Couleur de fond au survol */
 }
 
-/* Style spécifique pour les icônes des réseaux sociaux dans les liens */
-.topbar .contact-links a i {
-  margin-right: 8px; /* Espacement entre l'icône et le texte */
-}
+.contact-links .fa-phone-alt { color: #28a745; } /* Couleur spécifique pour l'icône du téléphone */
+.contact-links .fa-linkedin { color: #0077b5; } /* Couleur spécifique pour l'icône LinkedIn */
+.contact-links .fa-github { color: #333; } /* Couleur spécifique pour l'icône GitHub */
+.contact-links .fa-discord { color: #7289da; } /* Couleur spécifique pour l'icône Discord */
+.contact-links .fa-envelope { color: #e93d3d; } /* Couleur spécifique pour l'icône Email */
 
-/* Styles personnalisés pour les liens sociaux */
-.topbar .contact-links a[href*="linkedin.com"] {
-  color: #0077b5; /* Couleur LinkedIn */
-}
-
-.topbar .contact-links a[href*="github.com"] {
-  color: #333; /* Couleur GitHub */
-}
-
-.topbar .contact-links a[href*="discord.com"] {
-  color: #7289da; /* Couleur Discord */
-}
-
-.topbar .contact-links a[href*="mailto:"] {
-  color: #d14836; /* Couleur pour les emails */
-}
-
-
-
-/* Styles pour l'en-tête de la page */
-header {
-  position: relative;
-  z-index: 900;
-}
-
+/* Style pour la navbar */
 .navbar {
-  padding: 10px 20px;
-  background-color: #104d83; /* Couleur de fond pour la navbar */
-  border-bottom: 2px solid #fff; /* Bordure blanche en bas de la navbar */
+  background-color: #0b365f; /* Couleur de fond de la navbar */
 }
 
 .navbar-brand {
-  font-family: 'Lora', serif;
-  font-weight: bold;
-  color: #fff;
-  font-size: 1.25rem;
+  color: #ffffff; /* Couleur du texte de la marque */
+  font-weight: bold; /* Gras pour le texte de la marque */
+  display: flex; /* Affichage en ligne flexible pour l'image et le texte */
+  align-items: center; /* Aligne le texte et l'image au centre */
 }
 
 .navbar-brand img {
-  border-radius: 50%; /* Pour rendre le logo circulaire */
+  border-radius: 50%; /* Bordures arrondies pour l'image du logo */
+  animation: spin 2s linear infinite; /* Animation de rotation continue */
+  margin-right: 10px; /* Espacement à droite de l'image */
+}
+
+/* Animation de rotation pour l'image du logo */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
 .navbar-text {
-  color: #ddd; /* Couleur légèrement plus claire pour le texte */
-  font-size: 0.875rem;
+  font-size: 0.875rem; /* Taille de la police pour le texte de l'expérience */
+  color: #ffffff; /* Couleur du texte */
 }
 
-/* Style pour les boutons de navigation */
-.navbar-nav .nav-link {
-  color: #fff;
-  border: 2px solid #fff; /* Bordure blanche */
-  border-radius: 25px;
-  padding: 8px 15px;
-  margin-left: 10px;
-  transition: all 0.3s ease; /* Transition pour les effets */
-  position: relative;
+.nav-link {
+  color: #ffffff; /* Couleur des liens de navigation */
+  padding: 10px; /* Espacement intérieur des liens */
+  border-radius: 5px; /* Bordures arrondies pour les liens */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transition fluide */
 }
 
-.navbar-nav .nav-link:hover {
-  background-color: #fff;
-  color: #333;
-  border-color: #fff;
-  transform: translateY(-3px); /* Légère élévation à l'hover */
-  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3); /* Ombre légère */
+.nav-link:hover {
+  color: #f8f9fa; /* Couleur des liens au survol */
+  background-color: #495057; /* Couleur de fond au survol */
 }
 
-/* Animation de soulignement */
-.navbar-nav .nav-link::before {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: -5px;
-  left: 50%;
-  background-color: #fff;
-  transition: width 0.3s ease, left 0.3s ease;
-}
-
-.navbar-nav .nav-link:hover::before {
-  width: 100%;
-  left: 0;
-}
-
-/* Pour les boutons actifs */
-.navbar-nav .nav-link.active {
-  background-color: #fff;
-  color: #333;
-  border-color: #fff;
-  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5);
-}
-
-/* Pour l'icône du menu hamburger en petit écran */
 .navbar-toggler {
-  border-color: #fff;
+  border: 1px solid #ffffff; /* Bordure blanche pour le bouton toggle */
+  border-radius: 5px; /* Bordures arrondies pour le bouton toggle */
+  transition: background-color 0.3s ease, border-color 0.3s ease; /* Transition fluide */
+}
+
+.navbar-toggler:hover {
+  background-color: #495057; /* Couleur de fond au survol */
 }
 
 .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba%281,1,1,1%29' stroke-width='2' linecap='round' linejoin='round' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"%3E%3Cpath stroke="rgba(255,255,255,.5)" stroke-linecap="round" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E'); /* Icône du toggle en blanc */
 }
 
-.navbar-collapse {
-  justify-content: flex-end;
+/* Fixe le header en haut de la page */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1030; /* Assure que le header est au-dessus du contenu */
 }
 
-
-/* Styles pour la barre de navigation */
-.navbar {
-  transition: all 0.3s ease-in-out;
-}
-
-.navbar-brand {
-  font-weight: bold;
-  font-size: 1.5rem;
-}
-
-.navbar-brand img {
-  transition: transform 0.3s ease-in-out;
-  border-radius: 15px;
-}
-
-.navbar-brand:hover img {
-  transform: rotate(360deg);
-}
-
-.navbar-nav .nav-item {
-  margin-left: 10px;
-}
-
-.navbar-nav .nav-link {
-  color: #fff;
-  font-weight: 500;
-  transition: color 0.3s ease-in-out;
-}
-
-.navbar-nav .nav-link:hover {
-  color: #17a2b8;
-}
-
-/* Style pour le bouton toggle sur les petits écrans */
-.navbar-toggler {
-  border: none;
-}
-
-.navbar-toggler:focus {
-  outline: none;
-  box-shadow: none;
-}
-
-/* Ajustement pour la barre de navigation fixe */
 body {
-  padding-top: 56px; /* Hauteur de la navbar */
+  padding-top: 80px; /* Assure que le contenu n'est pas caché derrière le header fixe */
 }
 
-@media (min-width: 992px) {
-  body {
-    padding-top: 76px; /* Hauteur de la navbar sur les grands écrans */
-  }
-}
-
-/* Animation de la barre de navigation lors du défilement */
-.navbar-scrolled {
-  background-color: rgba(33, 37, 41, 0.9) !important;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
 
 /* Styles pour la section d'accueil */
 #accueil {

@@ -1,5 +1,28 @@
 // script.js
 
+// Script pour gérer l'état du bouton toggle 
+
+  document.addEventListener("DOMContentLoaded", function() {
+    const toggleButton = document.getElementById("navbarToggle");
+    const navbarCollapse = document.getElementById("navbarNav");
+
+    toggleButton.addEventListener("click", function() {
+      const isExpanded = toggleButton.getAttribute("aria-expanded") === "true";
+      toggleButton.setAttribute("aria-expanded", !isExpanded);
+    });
+
+    // Fermer le menu lorsque l'un des liens est cliqué
+    const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+    navLinks.forEach(link => {
+      link.addEventListener("click", function() {
+        if (navbarCollapse.classList.contains("show")) {
+          navbarCollapse.classList.remove("show");
+          toggleButton.setAttribute("aria-expanded", "false");
+        }
+      });
+    });
+  });
+
 // Afficher le nombre d'annee de developpement website
 document.addEventListener('DOMContentLoaded', function () {
     const startYear = 2023; // Remplacez par l'année où vous avez commencé à travailler comme développeur
