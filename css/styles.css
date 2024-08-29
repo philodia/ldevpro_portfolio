@@ -86,7 +86,7 @@ body {
 
 .nav-link:hover {
   color: #f8f9fa; /* Couleur des liens au survol */
-  background-color: #495057; /* Couleur de fond au survol */
+  background-color: #105db6; /* Couleur de fond au survol */
 }
 
 .navbar-toggler {
