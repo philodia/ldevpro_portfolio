@@ -68,47 +68,47 @@ console.log("Votre compétence est maintenant de " + (competenceFinale * 100).to
 //Progression Bar de Competence
 document.addEventListener('DOMContentLoaded', function () {
     // Exemple d'utilisation pour une compétence (HTML)
-    let competenceHTML = calculerCompetence(0.50, 5, 0.10);
+    let competenceHTML = calculerCompetence(0.35, 5, 0.10);
     document.querySelector('.progress-bar.html').style.width = (competenceHTML * 100).toFixed(2) + '%';
     document.querySelector('.progress-bar.html').textContent = (competenceHTML * 100).toFixed(2) + '%';
 
     // Exemple d'utilisation pour une compétence (CSS)
-    let competenceCSS = calculerCompetence(0.45, 5, 0.10);
+    let competenceCSS = calculerCompetence(0.35, 5, 0.10);
     document.querySelector('.progress-bar.css').style.width = (competenceCSS * 100).toFixed(2) + '%';
     document.querySelector('.progress-bar.css').textContent = (competenceCSS * 100).toFixed(2) + '%';
 
     // Exemple d'utilisation pour une compétence (JavaScript)
-    let competenceJavaScript = calculerCompetence(0.35, 5, 0.10);
+    let competenceJavaScript = calculerCompetence(0.15, 5, 0.10);
     document.querySelector('.progress-bar.javascript').style.width = (competenceJavaScript * 100).toFixed(2) + '%';
     document.querySelector('.progress-bar.javascript').textContent = (competenceJavaScript * 100).toFixed(2) + '%';
 
     // Exemple d'utilisation pour une compétence (REACTJS)
-    let competenceREACTJS = calculerCompetence(0.35, 5, 0.10);
+    let competenceREACTJS = calculerCompetence(0.15, 5, 0.10);
     document.querySelector('.progress-bar.reactjs').style.width = (competenceREACTJS * 100).toFixed(2) + '%';
     document.querySelector('.progress-bar.reactjs').textContent = (competenceREACTJS * 100).toFixed(2) + '%';
 
     // Exemple d'utilisation pour une compétence (NODEJS)
-    let competenceNODEJS = calculerCompetence(0.25, 5, 0.10);
+    let competenceNODEJS = calculerCompetence(0.15, 5, 0.10);
     document.querySelector('.progress-bar.nodejs').style.width = (competenceNODEJS * 100).toFixed(2) + '%';
     document.querySelector('.progress-bar.nodejs').textContent = (competenceNODEJS * 100).toFixed(2) + '%';
 
     // Exemple d'utilisation pour une compétence (MONGODB)
-    let competenceMONGODB = calculerCompetence(0.40, 5, 0.10);
+    let competenceMONGODB = calculerCompetence(0.20, 5, 0.10);
     document.querySelector('.progress-bar.mongodb').style.width = (competenceMONGODB * 100).toFixed(2) + '%';
     document.querySelector('.progress-bar.mongodb').textContent = (competenceMONGODB * 100).toFixed(2) + '%';
 
     // Exemple d'utilisation pour une compétence VUE)
-    let competenceVUE = calculerCompetence(0.20, 5, 0.10);
+    let competenceVUE = calculerCompetence(0.10, 5, 0.10);
     document.querySelector('.progress-bar.vue').style.width = (competenceVUE * 100).toFixed(2) + '%';
     document.querySelector('.progress-bar.vue').textContent = (competenceVUE * 100).toFixed(2) + '%';
 
     // Exemple d'utilisation pour une compétence (GIT)
-    let competenceGIT = calculerCompetence(0.30, 5, 0.10);
+    let competenceGIT = calculerCompetence(0.20, 5, 0.10);
     document.querySelector('.progress-bar.git').style.width = (competenceGIT * 100).toFixed(2) + '%';
     document.querySelector('.progress-bar.git').textContent = (competenceGIT * 100).toFixed(2) + '%';
 
     // Exemple d'utilisation pour une compétence (GITHUB)
-    let competenceGITHUB = calculerCompetence(0.30, 5, 0.10);
+    let competenceGITHUB = calculerCompetence(0.20, 5, 0.10);
     document.querySelector('.progress-bar.github').style.width = (competenceGITHUB * 100).toFixed(2) + '%';
     document.querySelector('.progress-bar.github').textContent = (competenceGITHUB * 100).toFixed(2) + '%';
     // Répétez pour les autres compétences...
