@@ -609,10 +609,26 @@ body {
   }
 }
 
-/* Pied de page */
-footer {
-  font-size: 0.9rem;
+/* Styles pour le pied de page */
+footer.bg-blues {
+  background-color: #052749; /* Couleur de fond bleu */
+  color: #ffffff; /* Couleur du texte en blanc */
+  padding: 15px 0; /* Espacement vertical du pied de page */
 }
+
+footer .container {
+  text-align: center; /* Centrer le contenu du pied de page */
+}
+
+footer p {
+  margin-bottom: 0; /* Retirer la marge inférieure du paragraphe */
+  font-size: 1rem; /* Taille de la police */
+}
+
+footer p span#current-year {
+  font-weight: bold; /* Mettre en gras l'année courante */
+}
+
 
 /* Styles pour le bouton Remonter */
 #backToTop {
