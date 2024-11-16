@@ -17,46 +17,36 @@ header {
 }
 
 body {
-  padding-top: 120px; /* Assure que le contenu n'est pas caché derrière le header fixe */
+  padding-top: 110px; /* Assure que le contenu n'est pas caché derrière le header fixe */
 }
 
-/* Topbar Style */
+/* Style pour le top bar */
 .topbar {
-  background-color: #f8f9fa; /* Couleur de fond douce */
-  padding: 20px 0;
-  border-bottom: 2px solid #ddd;
+  background-color: #f8f9fa; /* Couleur de fond de la top bar */
+  padding: 10px 0; /* Espacement vertical */
+  border-bottom: 1px solid #dee2e6; /* Bordure en bas de la top bar */
 }
 
-.topbar-title {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 15px;
-  color: #333;
+.topbar h3 {
+  margin: 0; /* Supprime la marge par défaut du h3 */
+  font-size: 1.2rem; /* Taille de la police du texte */
+  font-weight: bold; /* Gras pour le texte */
 }
 
 .contact-links {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px; /* Espacement entre les liens */
+  display: flex; /* Affiche les liens en ligne */
+  justify-content: center; /* Centre les liens horizontalement */
+  gap: 10px; /* Espacement entre les liens */
 }
 
-.contact-link {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: #555;
-  font-size: 1rem;
-  transition: color 0.3s ease, transform 0.3s ease;
-}
-
-.contact-link i {
-  font-size: 1.5rem; /* Taille des icônes */
-  margin-right: 8px; /* Espacement entre icône et texte */
-}
-
-.contact-link span {
-  display: inline-block;
+.contact-links a {
+  color: #333; /* Couleur des liens */
+  text-decoration: none; /* Supprime la décoration des liens */
+  display: flex; /* Affichage en ligne flexible pour les icônes et texte */
+  align-items: center; /* Aligne les icônes et texte au centre */
+  padding: 5px 10px; /* Espacement intérieur */
+  border-radius: 5px; /* Bordures arrondies */
+  transition: all 0.3s ease; /* Transition fluide pour les effets */
 }
 
 .contact-links a:hover {
