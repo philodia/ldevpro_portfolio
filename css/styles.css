@@ -14,47 +14,10 @@ header {
   left: 0;
   width: 100%;
   z-index: 1030; /* Assure que le header est au-dessus du contenu */
-  background-color: #fff; /* Fond blanc pour le header */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre pour démarquer le header */
 }
 
 body {
   padding-top: 120px; /* Assure que le contenu n'est pas caché derrière le header fixe */
-}
-
-/* Responsive pour les appareils mobiles */
-@media (max-width: 768px) {
-  body {
-    padding-top: 100px; /* Réduit le padding pour les écrans plus petits */
-  }
-
-  header {
-    padding: 10px 15px; /* Réduit le padding dans le header */
-  }
-
-  .topbar-title {
-    font-size: 1.2rem; /* Réduit la taille du texte du titre */
-    margin-bottom: 10px;
-  }
-
-  .contact-links {
-    flex-direction: column; /* Empile les liens verticalement */
-    gap: 10px; /* Réduit l'espacement entre les liens */
-  }
-
-  .contact-link {
-    font-size: 0.9rem; /* Réduit la taille du texte des liens */
-  }
-
-  .contact-link i {
-    font-size: 1.2rem; /* Ajuste la taille des icônes */
-    margin-right: 5px; /* Réduit l'espacement entre icône et texte */
-  }
-
-  .contact-link span {
-    display: inline-block;
-    text-align: center;
-  }
 }
 
 /* Topbar Style */
