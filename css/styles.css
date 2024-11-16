@@ -14,39 +14,86 @@ header {
   left: 0;
   width: 100%;
   z-index: 1030; /* Assure que le header est au-dessus du contenu */
+  background-color: #fff; /* Fond blanc pour le header */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre pour démarquer le header */
 }
 
 body {
-  padding-top: 80px; /* Assure que le contenu n'est pas caché derrière le header fixe */
+  padding-top: 120px; /* Assure que le contenu n'est pas caché derrière le header fixe */
 }
 
-/* Style pour le top bar */
+/* Responsive pour les appareils mobiles */
+@media (max-width: 768px) {
+  body {
+    padding-top: 100px; /* Réduit le padding pour les écrans plus petits */
+  }
+
+  header {
+    padding: 10px 15px; /* Réduit le padding dans le header */
+  }
+
+  .topbar-title {
+    font-size: 1.2rem; /* Réduit la taille du texte du titre */
+    margin-bottom: 10px;
+  }
+
+  .contact-links {
+    flex-direction: column; /* Empile les liens verticalement */
+    gap: 10px; /* Réduit l'espacement entre les liens */
+  }
+
+  .contact-link {
+    font-size: 0.9rem; /* Réduit la taille du texte des liens */
+  }
+
+  .contact-link i {
+    font-size: 1.2rem; /* Ajuste la taille des icônes */
+    margin-right: 5px; /* Réduit l'espacement entre icône et texte */
+  }
+
+  .contact-link span {
+    display: inline-block;
+    text-align: center;
+  }
+}
+
+/* Topbar Style */
 .topbar {
-  background-color: #f8f9fa; /* Couleur de fond de la top bar */
-  padding: 10px 0; /* Espacement vertical */
-  border-bottom: 1px solid #dee2e6; /* Bordure en bas de la top bar */
+  background-color: #f8f9fa; /* Couleur de fond douce */
+  padding: 20px 0;
+  border-bottom: 2px solid #ddd;
 }
 
-.topbar h3 {
-  margin: 0; /* Supprime la marge par défaut du h3 */
-  font-size: 1.2rem; /* Taille de la police du texte */
-  font-weight: bold; /* Gras pour le texte */
+.topbar-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
 }
 
 .contact-links {
-  display: flex; /* Affiche les liens en ligne */
-  justify-content: center; /* Centre les liens horizontalement */
-  gap: 10px; /* Espacement entre les liens */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px; /* Espacement entre les liens */
 }
 
-.contact-links a {
-  color: #333; /* Couleur des liens */
-  text-decoration: none; /* Supprime la décoration des liens */
-  display: flex; /* Affichage en ligne flexible pour les icônes et texte */
-  align-items: center; /* Aligne les icônes et texte au centre */
-  padding: 5px 10px; /* Espacement intérieur */
-  border-radius: 5px; /* Bordures arrondies */
-  transition: all 0.3s ease; /* Transition fluide pour les effets */
+.contact-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #555;
+  font-size: 1rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-link i {
+  font-size: 1.5rem; /* Taille des icônes */
+  margin-right: 8px; /* Espacement entre icône et texte */
+}
+
+.contact-link span {
+  display: inline-block;
 }
 
 .contact-links a:hover {
