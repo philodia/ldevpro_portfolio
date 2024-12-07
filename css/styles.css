@@ -1,4 +1,47 @@
 /* styles.css */
+/* Ajouter cette section au début de votre fichier CSS */
+
+/* Style commun */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (max-width: 768px) {
+  .topbar-title {
+    font-size: 18px;
+  }
+
+  .contact-link span {
+    display: none; /* Masquer le texte sur les petits écrans pour économiser de l'espace */
+  }
+
+  .navbar .navbar-brand img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .navbar .navbar-text {
+    font-size: 14px;
+  }
+
+  .nav-link {
+    font-size: 14px;
+    padding: 10px 0;
+  }
+}
+
+/* Fin de la section responsive */
+
 /* Styles généraux pour le corps de la page */
 body {
   font-family: 'Arial', sans-serif;
